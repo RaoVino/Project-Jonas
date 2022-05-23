@@ -1,0 +1,19 @@
+@mixin color {
+    background-image: linear-gradient(to top left, #39b385, #9be15d);
+    background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+    background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+@mixin input {
+    width: 100px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    border-radius: 160px;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+}
+@media screen and (max-width: 833px) {
+  .main {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+.main .inputt input {
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 160px;
+  padding: 5px;
+  text-align: center;
+}
+.main .inputt button {
+  border: none;
+  outline: none;
+  font-size: x-large;
+}
+
+.maincontainer {
+  max-width: 1140px;
+  margin: auto;
+  margin-top: 100px;
+}
+@media screen and (max-width: 833px) {
+  .maincontainer {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 781px) {
+  .maincontainer {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+}
+.maincontainer .current {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 833px) {
+  .maincontainer .current {
+    display: block;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+}
+.maincontainer .current .balance p {
+  font-size: small;
+}
+.maincontainer .current .amount span {
+  font-size: xx-large;
+}
+.maincontainer .container {
+  display: flex;
+}
+@media screen and (max-width: 833px) {
+  .maincontainer .container {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+}
+.maincontainer .container .subcontainer {
+  flex-basis: 60%;
+}
+.maincontainer .container .subcontainer .transfer {
+  margin-top: 50px;
+  background-color: #ffffff;
+  height: 500px;
+  overflow: auto;
+}
+.maincontainer .container .subcontainer .transfer .deposit {
+  padding: 20px;
+  border-bottom: 1px solid #f3f3f3;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+.maincontainer .container .subcontainer .transfer .deposit button {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  border-radius: 100px;
+  width: 100px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.maincontainer .container .subcontainer .transfer .close button {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.maincontainer .container .subcontainer .interest {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest {
+    display: block;
+    text-align: center;
+  }
+}
+.maincontainer .container .subcontainer .interest .interestout {
+  display: flex;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest .interestout {
+    display: block;
+    text-align: center;
+  }
+}
+.maincontainer .container .subcontainer .interest .interestout .in {
+  margin-left: 30px;
+}
+@media screen and (max-width: 1016px) {
+  .maincontainer .container .subcontainer .interest .interestout .in {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 968px) {
+  .maincontainer .container .subcontainer .interest .interestout .in {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 833px) {
+  .maincontainer .container .subcontainer .interest .interestout .in {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest .interestout .in {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
+.maincontainer .container .subcontainer .interest .interestout .in span:nth-child(1) {
+  font-size: 15px;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest .interestout .in span:nth-child(1) {
+    font-size: large;
+  }
+}
+.maincontainer .container .subcontainer .interest .interestout .in span:nth-child(2) {
+  font-size: x-large;
+}
+@media screen and (max-width: 968px) {
+  .maincontainer .container .subcontainer .interest .interestout .in span:nth-child(2) {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 833px) {
+  .maincontainer .container .subcontainer .interest .interestout .in span:nth-child(2) {
+    font-size: x-large;
+  }
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest .interestout .in span:nth-child(2) {
+    font-size: xx-large;
+  }
+}
+.maincontainer .container .subcontainer .interest .interestout .in:nth-child(1) {
+  margin: 0;
+}
+.maincontainer .container .subcontainer .interest .interestout .out span:nth-child(2) {
+  color: #e52a5a;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .subcontainer .interest .sort {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+.maincontainer .container .request .money {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.maincontainer .container .request .money h3 {
+  margin-bottom: 20px;
+}
+.maincontainer .container .request .money .transfermoney {
+  display: flex;
+}
+.maincontainer .container .request .money .transfermoney .buttonn input {
+  width: 100px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 160px;
+  padding: 5px;
+  text-align: center;
+  width: 180px;
+  border-radius: 10px;
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .request .money .transfermoney .buttonn input {
+    width: 100px;
+  }
+}
+.maincontainer .container .request .money .transfermoney .buttonn label {
+  display: block;
+  text-align: center;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .request .money .transfermoney .buttonn label {
+    text-align: left;
+  }
+}
+.maincontainer .container .request .money .transfermoney .buttonn button {
+  font-size: large;
+  width: 50px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.maincontainer .container .request .loggout p {
+  text-align: right;
+  margin-top: 20px;
+}
+@media screen and (max-width: 629px) {
+  .maincontainer .container .request .loggout p {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+.maincontainer .container .request .loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+.maincontainer .container .request .account {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  padding: 30px;
+}
+.maincontainer .container .request .account .transfermoney .buttonn button {
+  width: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */
